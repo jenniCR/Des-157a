@@ -85,6 +85,19 @@ footer {
   padding: 1em;
   width: 10%;
 }
+.pink {
+  background-color: #FF95B4;
+  border-style: solid;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 2%;
+  margin-bottom: 15%;
+  padding: 1em;
+  border-color:#D9D9D9;
+  border-width: 10px;
+  border-radius: 26px;  
+}
+
 /* .blue {
     background-color: #A6BED0;
     border-style:solid;
@@ -98,18 +111,7 @@ footer {
     border-radius: 26px;
     position: relative;
 }
-.pink {
-    background-color: #FF95B4;
-    border-style: solid;
-    margin-right: 8%;
-    margin-left: 8%;
-    margin-top: 2%;
-    margin-bottom: 15%;
-    padding: 1em;
-    border-color:#D9D9D9;
-    border-width: 10px;
-    border-radius: 26px;  
-}
+
 
   /* .berrythree {
     position: absolute;
@@ -210,4 +212,4 @@ h2 { margin-right: 18%;}
     75% { transform: translate(-15px, 15px) rotate(-15deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
  }   */
-  */
+

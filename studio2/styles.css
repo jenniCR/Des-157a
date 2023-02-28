@@ -1,0 +1,181 @@
+body {
+    font-family: arial;
+    color: black;
+    line-height: 1.4em;
+    
+}
+h1 { 
+    font-family: 'Tilt Neon', cursive;
+    color: black;
+    text-align: center;
+}
+h2 {
+    font-family: 'Tilt Neon', cursive;
+    position: absolute;
+    bottom: 510px;
+    right: 540px;
+}
+ h3 {
+    font-family: 'Tilt Neon', cursive;
+    color: black;
+    text-align: center;
+}
+
+.computer {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.art {
+    display: block;
+    position: absolute;
+    bottom: 550px;
+    right: 310px;
+    margin: auto;
+    width: 5%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.games {
+    display: block;
+    position: absolute;
+    bottom: 550px;
+    right: 400px;
+    margin: auto;
+    width: 5%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bird {
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    right: 91px;
+    margin: auto;
+    width: 20%;
+}
+.window {
+    border-style:none;
+    display: block;
+    position: absolute;
+    bottom: 287px;
+    right: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+iframe {
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: black;
+    bottom: 350px;
+    right: 650px;
+}
+.clip {
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: black;
+    display: block;
+    position: absolute;
+    bottom: 310px;
+    right: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;   
+}
+.nopales {
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: black;
+    display: block;
+    position: absolute;
+    bottom: 320px;
+    right: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;   
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
+.overlay-one {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+.overlay-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+.overlay-three {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+.overlay-four {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+.art:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+.games:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+.bird:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+ }  
