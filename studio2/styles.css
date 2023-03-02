@@ -110,7 +110,7 @@ iframe {
 }
 
 .showing {
-    visibility: visible;
+    visibility: show; 
     opacity: 1;
 }
 
