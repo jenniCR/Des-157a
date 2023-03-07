@@ -12,7 +12,7 @@ h2 {
     font-family: 'Tilt Neon', cursive;
     position: absolute;
     bottom: 510px;
-    right: 540px;
+    right: 562px;
 }
 h3 {
     font-family: 'Tilt Neon', cursive;
@@ -24,8 +24,9 @@ h3 {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 1000px;
 }
+
 .art {
     display: block;
     position: absolute;
@@ -61,11 +62,10 @@ h3 {
     border-style:none;
     display: block;
     position: absolute;
-    bottom: 287px;
+    bottom: 196px;
     right: 520px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
+    width: 515px; 
+    height: 500px ;  
 }
 iframe {
     position: absolute;
@@ -96,11 +96,12 @@ iframe {
     border-color: black;
     display: block;
     position: absolute;
-    bottom: 320px;
-    right: 610px;
+    bottom: 300px;
+    right: 550px;
     margin-left: auto;
     margin-right: auto;
-    width: 33%;   
+    width: 510px; 
+    height: 290px ;  
 }
 .hidden {
     visibility: hidden;
@@ -112,10 +113,12 @@ iframe {
 }
 .overlay-one {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 525px; 
+    height: 500px;  
+    bottom: 200px;
+    right: 540px;
+    width: 525px; 
+    height: 500px;  
     transition-property: visibility, opacity;
     transition-duration: .5s;
     transition-timing-function: ease;
