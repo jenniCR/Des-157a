@@ -1,0 +1,84 @@
+body {
+    background-color: #FFFFFF;
+}
+h2 {
+    color: #1E1E1E;
+    font-family: 'Dongle', sans-serif;
+    font-size: 4em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 10px;
+}
+h3 {
+    color: #FFFFFF;
+    font-family: 'Dongle', sans-serif;
+    font-size: 3em;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+p {
+    color: #1E1E1E;
+    font-family: 'Dongle', sans-serif;
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 10px;
+}
+.player_two {
+    text-align: right;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-width: 10px;
+    border-radius: 26px;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 0;
+    background-color: #B8CCFF;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 800px;
+}
+.player_one {
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-width: 10px;
+    border-radius: 26px;
+    border-bottom-right-radius: 130px;
+    border-bottom-left-radius: 0;
+    background-color: #FFB8D1;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 800px;
+    margin-right: 80px;
+}
+.commands {
+    position: relative;
+    background-color: #1E1E1E;
+    border-style: none;
+    border-radius: 26px;
+    padding: 1em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.attack {
+    position: absolute;
+    bottom: 0px;
+    left: 600px;
+    border-color: #1E1E1E;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 26px;
+    background-color: #B8FFCC;
+    padding-right: 480px;
+    line-height: .5px; 
+}
+.com {
+    color: #1E1E1E;
+    line-height: .5px; 
+    margin-top: 66px;
+}
