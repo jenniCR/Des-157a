@@ -108,7 +108,7 @@ iframe {
     opacity: 0;
 }
 .showing {
-    visibility: visible;
+    visibility: showing;
     opacity: 1;
 }
 .overlay-one {
