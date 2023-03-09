@@ -2,12 +2,19 @@
 
     "use strict";
     console.log(`reading js`);
+    
+    var audioElement = document.getElementById('bgMusic')
+
+    audioElement.addEventListener("canplay", function(event){
+        audioElement.volume = ".1";
+    }, false);
 
     const hp1 = document.getElementById("hp1"); //need one for hp2, peck, dodge, start
     const hp2 = document.getElementById("hp2");
     const peck = document.getElementById("peck");
     const dodge = document.getElementById("dodge");
     const action = document.getElementById("action");
+    const audio = new Audio("audio/BIRD_1.mp3");
     const gameData = {
         
         players: ["player one", "player two"],
@@ -15,6 +22,7 @@
         roll: 0,
         index: 0
     }
+    
     
         peck.addEventListener("click",function(){
 
@@ -67,6 +75,7 @@
         if (gameData.score[1] < 1){
             action.innerHTML = `<h3>${winner} has won the battle! Hooray!</h3>`; 
             document.querySelector(".attack").innerHTML = "";
+            audio.play();
        }
     }
         else if (gameData.index == 1) {
@@ -74,6 +83,7 @@
             if (gameData.score[0] < 1){
             action.innerHTML = `<h3>${winner} has won the battle! Hooray!</h3>`;
             document.querySelector(".attack").innerHTML = ""; 
+            audio.play();
        } 
     }
             
