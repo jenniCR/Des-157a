@@ -1,5 +1,22 @@
 body {
     background-color: #FFFFFF;
+   
+}
+.burd_one {
+    z-index: -1;
+    display: block;
+    position:absolute;
+    width: 32%;
+    bottom: 20px;
+    right: 800px;
+}
+.burd_two {
+    z-index: -1;
+    position:absolute;
+    width: 50%;
+    top: 0px;
+    right: 0px;
+    left: 530px;
 }
 h2 {
     color: #1E1E1E;
@@ -11,10 +28,10 @@ h2 {
     margin-right: 50px;
     line-height: 10px;
 }
-h3 {
+#action, h3 {
     color: #FFFFFF;
     font-family: 'Dongle', sans-serif;
-    font-size: 3em;
+    font-size: 48px;
     margin-top: 80px;
     margin-bottom: 80px;
     margin-left: 100px;
