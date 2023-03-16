@@ -3,19 +3,22 @@
     "use strict";
     console.log(`reading js`);
     
-    var audioElement = document.getElementById('bgMusic')
 
-    audioElement.addEventListener("canplay", function(event){
-        audioElement.volume = ".2";
-    }, false);
-
-
+    const overlay = document.getElementById("overlay");
     const hp1 = document.getElementById("hp1"); //need one for hp2, peck, dodge, start
     const hp2 = document.getElementById("hp2");
     const peck = document.getElementById("peck");
     const dodge = document.getElementById("dodge");
     const action = document.getElementById("action");
     const audio = new Audio("audio/BIRD_1.mp3");
+    var audioElement = document.getElementById('bgMusic')
+    let healthBar1 = document.querySelector("#healthBar1 .inner");
+    let healthBar2 = document.querySelector("#healthBar2 .inner");
+
+    audioElement.addEventListener("canplay", function(event){
+        audioElement.volume = ".2";
+    }, false);
+
     const gameData = {
         
         players: ["player one", "player two"],
@@ -29,17 +32,19 @@
             gameData.roll = Math.floor(Math.random() * 50) + 1;
     
             if (gameData.index == 0){ 
-                gameData.score[1] = gameData.score[1] - gameData.roll;
                 hp2.innerHTML = `HP: ${gameData.score[1]}/200`;
+                gameData.score[1] = gameData.score[1] - gameData.roll;
                 action.innerHTML = "<h3>Player One Pecks...</h3>";
+                healthBar2.style.width = `${gameData.score[1]/2}%`;
                 setTimeout(() => {
                     action.innerHTML = "<h3>What would Player Two do?</h3>";
                 }, 3000);
                 
             } else {
-                gameData.score[0] = gameData.score[0] - gameData.roll;
                 hp1.innerHTML = `HP: ${gameData.score[0]}/200`;
+                gameData.score[0] = gameData.score[0] - gameData.roll;
                 action.innerHTML = "<h3>Player Two Pecks...</h3>";
+                healthBar1.style.width = `${gameData.score[0]/2}%`;
                 setTimeout(() => {
                     action.innerHTML = "<h3>What would Player One do?</h3>";
                 }, 3000);
@@ -57,6 +62,7 @@
             if (gameData.index == 0){ 
                 gameData.score[0] = gameData.score[0] + gameData.roll;//add a rule that stops it from going over 200hp and less than zero
                 hp1.innerHTML = `HP: ${gameData.score[0]}/200`;
+                healthBar1.style.width = `${gameData.score[0]/2}%`;
                 action.innerHTML = "<h3>Player One Dodges...</h3>";
                 setTimeout(() => {
                 action.innerHTML = "<h3>What would Player Two do?...</h3>";
@@ -65,6 +71,7 @@
             } else {
                 gameData.score[1] = gameData.score[1] + gameData.roll;
                 hp2.innerHTML = `HP: ${gameData.score[1]}/200`;
+                healthBar2.style.width = `${gameData.score[1]/2}%`;
                 action.innerHTML = "<h3>Player Two Dodges...</h3>";
                 setTimeout(() => {
                 action.innerHTML = "<h3>What would Player One do?</h3>";
@@ -91,7 +98,7 @@
             action.innerHTML = `<h3>${winner} has won the battle! Hooray!</h3>`;
             document.querySelector(".attack").innerHTML = ""; 
             audio.play();
-       } 
+       }
     }
             
     }
