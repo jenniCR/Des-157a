@@ -30,6 +30,7 @@
         peck.addEventListener("click",function(){
 
             gameData.roll = Math.floor(Math.random() * 50) + 1;
+            
     
             if (gameData.index == 0){ 
                 hp2.innerHTML = `HP: ${gameData.score[1]}/200`;
