@@ -1,0 +1,156 @@
+body {
+    background-color: #FFFFFF;
+   
+}
+.burd_one {
+    z-index: -1;
+    display: block;
+    position:absolute;
+    width: 32%;
+    bottom: 115px;
+    right: 800px;
+    animation: burd_one 2s ease infinite;
+  }
+  @keyframes burd_one {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      60% {transform: translateY(-30px);}
+      40% {transform: translateY(-15px);}
+  }
+.burd_two {
+    z-index: -1;
+    position:absolute;
+    width: 23%;
+    top: 30px;
+    right: 0px;
+    left: 820px;
+    animation: burd_two 2s ease infinite;
+}
+@keyframes burd_two {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+h2 {
+    color: #1E1E1E;
+    font-family: 'Dongle', sans-serif;
+    font-size: 4em;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 10px;
+}
+
+p {
+    color: #1E1E1E;
+    font-family: 'Dongle', sans-serif;
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 10px;
+}
+.info {
+    font-size: 1em;
+    border-style: none;
+    margin-left: 1300px;
+    color: darkgray;
+}
+.infotxt {
+    font-style: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}
+.player_two {
+    text-align: center;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-width: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 160px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 160px;
+    background-color: #B8CCFF;
+    margin-top: 10px;
+    margin-bottom: 120px;
+    margin-left: 10px;
+    margin-right: 900px;
+}
+.outer {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 20px;
+    border: 2px solid black;
+}
+.inner {
+    position: absolute;
+    background-color: green;
+    left:0;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    }
+.player_one {
+    text-align: center;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-width: 10px;
+    border-radius: 20px;
+    border-top-left-radius:160px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius: 160px;
+    border-bottom-left-radius: 15px;
+    background-color: #FFB8D1;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    margin-left: 900px;
+    margin-right: 15px;
+}
+#action, h3 {
+    color: #FFFFFF;
+    font-family: 'Dongle', sans-serif;
+    font-size: 65px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 90px;
+}
+.commands {
+    position: relative;
+    background-color: #1E1E1E;
+    border-style: none;
+    border-radius: 26px;
+    padding: 1px;
+    margin-top: 5px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.attack {
+    position: absolute;
+    bottom: 0px;
+    left: 600px;
+    border-color: #1E1E1E;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 26px;
+    background-color: #B8FFCC;
+    padding-right: 480px;
+    line-height: .5px; 
+}
+.com {
+    color: #1E1E1E;
+    line-height: .5px; 
+    margin-top: 66px;
+}
